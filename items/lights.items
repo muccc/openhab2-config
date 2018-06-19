@@ -5,10 +5,13 @@ Switch decke2  "Decke2" (Decke) [ "Lighting" ] {http=">[ON:POST:http://83.133.17
 Group Decke
 
 Switch acab "ACAB" [ "Lighting" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/acab/all_black] >[OFF:DELETE:http://acab2.club.muc.ccc.de:5000/acab/all_black] <[http://acab2.club.muc.ccc.de:5000/acab/all_black:10000:REGEX((.*))]" }
-Switch acab-decke "ACAB Decke" [ "Lighting" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/acab/decke] >[OFF:DELETE:http://acab2.club.muc.ccc.de:5000/acab/decke] <[http://acab2.club.muc.ccc.de:5000/acab/decke:10000:REGEX((.*))]" }
-Switch acab-fenster "ACAB Fenster" [ "Lighting" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/acab/wall] >[OFF:DELETE:http://acab2.club.muc.ccc.de:5000/acab/wall] <[http://acab2.club.muc.ccc.de:5000/acab/wall:10000:REGEX((.*))]" }
+Switch acabdecke "ACAB Decke" [ "Lighting" ] {http=">[ON:POST:http://acabdecke:5000/acab/decke] >[OFF:DELETE:http://acabdecke:5000/acab/decke] <[http://acabdecke:5000/acab/decke:10000:REGEX((.*))]" }
+Switch acabfenster "ACAB Fenster" [ "Lighting" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/acab/wall] >[OFF:DELETE:http://acab2.club.muc.ccc.de:5000/acab/wall] <[http://acab2.club.muc.ccc.de:5000/acab/wall:10000:REGEX((.*))]" }
 
 Color acabcolor "ACAB Color" [ "Switchable" ] {http=">[*:POST:http://acab2.club.muc.ccc.de:5000/color/all?color=%2$s] <[http://acab2.club.muc.ccc.de:5000/color/all:10000:REGEX((.*))]"}
+Color acabcolordecke "ACAB Color Decke" [ "Switchable" ] {http=">[*:POST:http://acabdecke:5000/color/all?color=%2$s] <[http://acabdecke:5000/color/all:10000:REGEX((.*))]"} 
+
 //Color acabcolor {http=">[*:POST:http://acab2.club.muc.ccc.de:5000/color/all?color=%2$s] <[http://acab2.club.muc.ccc.de:5000/color/all:10000:REGEX((.*))]"}
 
-Switch acabreset [ "Switchable" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/playlist/all]" } 
+Switch acabreset [ "Switchable" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/playlist/all]" }
+Switch acabresetdecke [ "Switchable" ] {http=">[ON:POST:http://acabdecke:5000/playlist/all]" } 

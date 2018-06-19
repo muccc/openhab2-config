@@ -9,21 +9,16 @@ sitemap default label="muCCC Control"
 
     Frame label="ACAB" {
         Switch item=acab
-        Switch item=acab-decke
-        Switch item=acab-fenster
+        Switch item=acabdecke
+        Switch item=acabfenster
         Colorpicker item=acabcolor label="ACAB Color" icon=colorwheel
-        Switch item=acabreset label="ACAB Playlist" mappings=[ON="Reset"] icon=video
+        Colorpicker item=acabcolordecke label="ACAB Color Decke" icon=colorwheel
+        Switch item=acabreset label="ACAB Playlist" mappings=[ON="Restart"] icon=video
+        Switch item=acabresetdecke label="ACAB Playlist Decke" mappings=[ON="Restart"] icon=video
     }
 
-    Frame label="Onkyo" {
-        Switch item=onkyo_onkyoAVR_2c7d7a3a_zone1_power label="Power"
-        Slider item=onkyo_onkyoAVR_2c7d7a3a_zone1_volume label="Volume" icon=soundvolume
-        Selection item=onkyo_onkyoAVR_2c7d7a3a_zone1_input label="Source" icon=settings mappings=[16="Süd (Hbf)", 1="Nord (Stadtauswärts)", 2=Chromecast, 0="Medien Pi", 5="Lounge (Keller)", 43="NET Audiostreams"]
-        Switch item=onkyo_onkyoAVR_2c7d7a3a_zone1_mute label="Mute"
-        Switch item=onkyo_onkyoAVR_2c7d7a3a_player_control mappings=[ON="Play", OFF="Stop", 1="Prev", 2="Next"]
-        Text item=onkyo_onkyoAVR_2c7d7a3a_player_currentPlayingTime label="Playing Time"
-        Text item=onkyo_onkyoAVR_2c7d7a3a_player_title label="Title"
-        Text item=onkyo_onkyoAVR_2c7d7a3a_player_listenmode label="Mode" icon=settings
+    Frame label="Projektor" {
+        Switch item=projector label="Power"
     }
 
     Frame label="Weather" {
