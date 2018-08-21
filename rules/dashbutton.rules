@@ -1,0 +1,16 @@
+rule "Audiobutton pressed"
+when
+    // Audio Dash Button
+    Channel "amazondashbutton:dashbutton:50-f5-da-17-8d-bb:press" triggered
+then
+    sendCommand(Zone1Power, ON)
+    sendCommand(Zone1InputSource, '01')
+    sendCommand(Zone1Volume, 100)
+    sendCommand(Zone1Mute, OFF)
+
+    sendCommand(Zone2Power, ON)
+    sendCommand(Zone2InputSource, '01')
+    sendCommand(Zone2Volume, 100)
+    sendCommand(Zone2Mute, OFF)
+end
+
