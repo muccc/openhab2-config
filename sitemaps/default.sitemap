@@ -1,24 +1,28 @@
 sitemap default label="muCCC Control"
 {
     Frame label="Licht" {
-        Switch item=kueche
         Switch item=decke1
         Switch item=decke2
-        Switch item=Decke
+        Switch item=Decke label="Decke Weiß"
+        Switch item=kueche
     }
 
     Frame label="ACAB" {
-        Switch item=acab
-        Switch item=acabdecke
-        Switch item=acabfenster
-        Colorpicker item=acabcolor label="ACAB Color" icon=colorwheel
-        Colorpicker item=acabcolordecke label="ACAB Color Decke" icon=colorwheel
-        Switch item=acabreset label="ACAB Playlist" mappings=[ON="Restart"] icon=video
-        Switch item=acabresetdecke label="ACAB Playlist Decke" mappings=[ON="Restart"] icon=video
+        Switch item=acabdecke   label="Decke"
+        Switch item=acabfenster label="Fenster"
+        Colorpicker item=acabcolordecke label="Decke Color"   icon=colorwheel
+        Colorpicker item=acabcolor      label="Fenster Color" icon=colorwheel
+        Switch item=acabresetdecke label="Decke Playlist"   mappings=[ON="Restart"] icon=video
+        Switch item=acabreset      label="Fenster Playlist" mappings=[ON="Restart"] icon=video
     }
 
     Frame label="Projektor" {
         Switch item=projector label="Power"
+	Selection item=projector_source label="Quelle" mappings=["1"="AVR", "15"="Direkt"]
+	Selection item=pioneeravr_ipAvr_5F9EC1B3_ED59_79BB_4530_00E036EE2963_zone1_setInputSource label="AVR Quelle" mappings=[04="unbelegt (ehemals C6E)", 10="Tisch HDMI (Kupfer)", 25="Chromecast", 26="H.M.G."]
+        Switch item=preset1 label="Klinke Tisch" mappings=[ON="Audio Tisch"] icon=mediacontrol
+        /* Switch item=preset2 label="CAT 6 Übertrager" mappings=[ON] */ 
+	Switch item=pioneeravr_ipAvr_5F9EC1B3_ED59_79BB_4530_00E036EE2963_zone1_power label="AVR Zone 1"
     }
 
     Frame label="Weather" {

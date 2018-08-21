@@ -2,7 +2,7 @@ Switch kueche  "Küche" [ "Lighting" ] {http=">[ON:POST:http://83.133.178.85:500
 Switch decke1  "Decke1" (Decke) [ "Lighting" ] {http=">[ON:POST:http://83.133.178.85:5000/relais/decke1]  >[OFF:DELETE:http://83.133.178.85:5000/relais/decke1]  <[http://83.133.178.85:5000/relais/decke1:10000:REGEX((.*))]" }
 Switch decke2  "Decke2" (Decke) [ "Lighting" ] {http=">[ON:POST:http://83.133.178.85:5000/relais/decke2]  >[OFF:DELETE:http://83.133.178.85:5000/relais/decke2]  <[http://83.133.178.85:5000/relais/decke2:10000:REGEX((.*))]" }
 
-Group Decke
+Group:Switch Decke
 
 Switch acab "ACAB" [ "Lighting" ] {http=">[ON:POST:http://acab2.club.muc.ccc.de:5000/acab/all_black] >[OFF:DELETE:http://acab2.club.muc.ccc.de:5000/acab/all_black] <[http://acab2.club.muc.ccc.de:5000/acab/all_black:10000:REGEX((.*))]" }
 Switch acabdecke "ACAB Decke" [ "Lighting" ] {http=">[ON:POST:http://acabdecke:5000/acab/decke] >[OFF:DELETE:http://acabdecke:5000/acab/decke] <[http://acabdecke:5000/acab/decke:10000:REGEX((.*))]" }

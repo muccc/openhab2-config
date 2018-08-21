@@ -1,3 +1,4 @@
 Switch projector  "Projektor" [ "Lighting" ] {http=">[ON:POST:http://localhost:5001/projector/power]  >[OFF:DELETE:http://localhost:5001/projector/power]  <[http://localhost:5001/projector/power:10000:REGEX((.*))]" }
+Switch projector_source  "Projektor Quelle" {http=">[*:POST:http://localhost:5001/projector/source:15] <[http://localhost:5001/projector/source:10000:REGEX((.*))]" }
 
  
