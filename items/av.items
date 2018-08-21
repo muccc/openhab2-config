@@ -1,0 +1,11 @@
+Switch Zone1Power "Power" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone1#power"}
+Dimmer Zone1Volume "Volume" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone1#volumeDimmer"}
+String Zone1InputSource "Input source" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone1#setInputSource"}
+Switch Zone1Mute "Mute" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone1#mute"}
+
+Switch Zone2Power "Power" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone2#power"}
+Dimmer Zone2Volume "Volume" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone2#volumeDimmer"}
+String Zone2InputSource "Input source" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone2#setInputSource"}
+Switch Zone2Mute "Mute" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:zone2#mute"}
+
+String AV_Display "Display" {channel="pioneeravr:ipAvr:5F9EC1B3-ED59-79BB-4530-00E036EE2963:displayInformation#displayInformation"}
